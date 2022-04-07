@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
+* {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(187, 184, 184, 0.664);
+          box-shadow: inset 0 0 5px rgba(187, 184, 184, 0.664);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(143, 211, 227, 0.788);
+  border-radius: 22px;
+}
+
+.top-page header .content {
+  position: absolute;
+  text-align: right;
+  top: 13rem;
+  color: #fff;
+}
+
+.top-page header .content .text-header h1 {
+  font-size: 5rem;
+  width: 10rem;
+  line-height: 0.9;
+  padding-left: 7rem;
+  text-align: center;
+}
+
+.top-page header .content .text-header h1 span {
+  font-size: 4.5rem;
+  padding-left: 3rem;
+}
+
+.top-page header .content .text-header h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3;
+  padding-left: 3rem;
+  text-align: center;
+}
+
+.top-page header .content .icons {
+  padding-left: 16rem;
+  padding-left: 1rem;
+  padding-right: 6rem;
+  display: inline-block;
+}
+
+.top-page header .content .icons img {
+  width: 70px;
+}
+
+.top-page header .content .icons a:link {
+  text-decoration: none;
+}
+
+.top-page img {
+  opacity: 0.83;
+  overflow-x: hidden;
+}
+
+#bear-watch {
+  padding: 12% 5.5%;
+  background-color: #a3d7d9;
+}
+
+#bear-watch .bear-watch .text-content h3 {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#bear-watch .bear-watch .text-content h3 .small-text {
+  font-size: larger;
+}
+
+#bear-watch .bear-watch .text-content p {
+  text-align: justify;
+  padding: 0 3rem 0;
+}
+
+#beet-food {
+  padding: 10.75% 7.5%;
+  background-color: #b6e09cf6;
+}
+
+#beet-food .food-text {
+  text-align: justify;
+  padding-left: 2rem;
+}
+
+#beet-food .food-text h3 {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+#beet-food .food-text p {
+  padding: 0 0 0 2rem;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+$primary-color: #b6e09cf6;
+$secondary-color: #a3d7d9;
+$text-color-primary: #fff;
+
+*{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(187, 184, 184, 0.664);
+    border-radius: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(143, 211, 227, 0.788);
+    border-radius: 22px;
+  }
+
+//   <!------------------------------------------------- Top Page -------------------------------------------------->
+
+.top-page{
+    header{
+        .content{
+            position: absolute;
+            text-align: right;
+            top: 13rem;
+            color: $text-color-primary;
+            .text-header{
+                h1{
+                    font-size: 5rem;
+                    width: 10rem;
+                    line-height: 0.9;
+                    padding-left: 7rem;
+                    text-align: center;
+    
+                    span{
+                        font-size: 4.5rem;
+                        padding-left: 3rem;
+                    }
+                }
+            
+                h3{
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    line-height: 3;
+                    padding-left: 3rem;
+                    text-align: center;
+                }
+            }
+            .icons{
+                padding-left: 16rem;
+                padding-left: 1rem;
+                padding-right: 6rem;
+                display: inline-block;
+                img{
+                    width: 70px;
+                }
+                a:link{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    img{
+        opacity: 0.83;
+        overflow-x: hidden;
+    }
+}
+
+
+//        <!--============================================= Main Content ================================================-->
+
+
+#bear-watch{
+    padding: 12% 5.5%;
+    background-color: $secondary-color;
+    .bear-watch{
+        .text-content{
+            h3{
+                text-align: center;
+                padding-bottom: 3rem;
+                .small-text{
+                    font-size: larger;
+                }
+            }
+            p{
+                text-align: justify;
+                padding: 0 3rem 0;
+            }
+        }
+    }
+}
+
+#beet-food{
+    padding: 10.75% 7.5%;
+    background-color: $primary-color;
+    .food-text{
+        text-align: justify;
+        padding-left: 2rem;
+        h3{
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+        p{
+            padding: 0 0 0 2rem;
+        }
+    }
+}
