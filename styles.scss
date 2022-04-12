@@ -117,3 +117,39 @@ $text-color-primary: #fff;
         }
     }
 }
+
+#entertain{
+    background-color: $secondary-color;
+    padding: 11% 7%;
+    .entertain-text{
+        padding-right: 3rem;
+        h3{
+            text-align: center;
+            padding-bottom: 3.6rem;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+#room-book{
+    background-color: $primary-color;
+    padding: 10% 7%;
+    .heading{
+        padding-bottom: 3rem;
+    }
+    .card-class{
+        background-color: $primary-color;
+        border-color: $primary-color;
+        img{
+            border-radius: 2rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        h4{
+            padding-top: 0.5rem;
+        }
+    }
+}

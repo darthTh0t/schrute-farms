@@ -109,4 +109,48 @@
 #beet-food .food-text p {
   padding: 0 0 0 2rem;
 }
+
+#entertain {
+  background-color: #a3d7d9;
+  padding: 11% 7%;
+}
+
+#entertain .entertain-text {
+  padding-right: 3rem;
+}
+
+#entertain .entertain-text h3 {
+  text-align: center;
+  padding-bottom: 3.6rem;
+}
+
+#entertain .entertain-text p {
+  text-align: justify;
+}
+
+#room-book {
+  background-color: #b6e09cf6;
+  padding: 10% 7%;
+}
+
+#room-book .heading {
+  padding-bottom: 3rem;
+}
+
+#room-book .card-class {
+  background-color: #b6e09cf6;
+  border-color: #b6e09cf6;
+}
+
+#room-book .card-class img {
+  border-radius: 2rem;
+}
+
+#room-book .card-class img:hover {
+  cursor: pointer;
+}
+
+#room-book .card-class h4 {
+  padding-top: 0.5rem;
+}
 /*# sourceMappingURL=styles.css.map */
