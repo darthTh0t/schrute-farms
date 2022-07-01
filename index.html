@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>Schrute Farms</title>
 </head>
+
+
 <body>
-    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
     <!------------------------------------------------- Top Page -------------------------------------------------->
     <div class="top-page">
         <img src="images/pexels-david-mcbee-388830.jpg" alt="farm-house" width="1531px" height="786px" style="overflow-x: hidden;">
@@ -48,7 +49,6 @@
                     Quaerat accusamus voluptatem quia soluta voluptatibus blanditiis consequatur ab commodi?
                 </p>
             </div>
-<<<<<<< HEAD
 
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -58,21 +58,18 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="images/pexels-pixabay-158109.jpg" alt="bear standing in puddle of water" width="720px">
+                        <img loading="lazy" src="images/pexels-pixabay-158109.jpg" alt="bear standing in puddle of water" width="720px">
                     </div>
 
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/pexels-александр-максин-7006418.jpg" alt="" width="720px" height="480px">
+                        <img loading="lazy" src="images/pexels-александр-максин-7006418.jpg" alt="" width="720px" height="480px">
                     </div>
 
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/pexels-pixabay-162340.jpg" alt="" width="720px">
+                        <img loading="lazy" src="images/pexels-pixabay-162340.jpg" alt="" width="720px">
                     </div>
                 </div>
             </div>
-=======
-            <img src="images/pexels-pixabay-158109.jpg" alt="bear standing in puddle of water" width="720px">
->>>>>>> 348778e4d9cd428b6a16f72f360579fe51c0c2d2
         </div>
     </div>
 
@@ -87,10 +84,10 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="images/pexels-nadin-sh-8694621.jpg" alt="" width="720px">
+                        <img loading="lazy" src="images/pexels-nadin-sh-8694621.jpg" alt="" width="720px">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/pexels-ella-olsson-1640777.jpg" alt="" width="720px" height="540px">
+                        <img loading="lazy" src="images/pexels-ella-olsson-1640777.jpg" alt="" width="720px" height="540px">
                     </div>
                 </div>
             </div>
@@ -130,42 +127,194 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="images/pexels-matheus-bertelli-573238.jpg" alt="magic-night" width="720px" class="d-block">
+                        <img loading="lazy" src="images/pexels-matheus-bertelli-573238.jpg" alt="magic-night" width="720px" class="d-block">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="images/pexels-pixabay-260922.jpg" alt="hotel-bar" width="720px" height="480px" class="d-block">
+                        <img loading="lazy" src="images/pexels-pixabay-260922.jpg" alt="hotel-bar" width="720px" height="480px" class="d-block">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--============================================= Modal Content =========================================================-->
 
 
     <div id="room-book">
         <h3 class="text-center heading">book your room's theme!</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card card-class">
-                    <img src="images/pexels-john-rapone-8240308.jpg" alt="irrigation">
+                <div class="card card-class" data-bs-toggle="modal" data-bs-target="#irrigation-modal">
+                    <img loading="lazy" src="images/pexels-john-rapone-8240308.jpg" alt="irrigation">
                     <h4 class="text-center">irrigation</h4>
                 </div>
             </div>
 
+            <div class="modal fade" id="irrigation-modal" tabindex="-1" aria-labelledby="irrigationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="irrigationModalLabel">Book Your Room Now!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                            <label for="customer-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="customer-name" placeholder="John Doe" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="customer-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="customer-email" placeholder="john.doe@email.com" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="room-theme" class="form-label">Room Theme</label>
+                            <input type="text" class="form-control" id="irrigation-room" placeholder="Irrigation" disabled>
+                          </div>
+                          <select class="form-select mb-2" aria-label="select-room">
+                            <option selected>No. Of Guests (max 3)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <select class="form-select" aria-label="select-guests">
+                            <option selected>No. Of Guests (max 3)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" onclick="">Book It!</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
             <div class="col">
-                <div class="card card-class">
-                    <img src="images/pexels-karolina-grabowska-4386232.jpg" alt="american-flag">
+                <div class="card card-class" data-bs-toggle="modal" data-bs-target="#americana-modal">
+                    <img loading="lazy" src="images/pexels-karolina-grabowska-4386232.jpg" alt="american-flag">
                     <h4 class="text-center">americana</h4>
                 </div>
             </div>
 
+            <div class="modal fade" id="americana-modal" tabindex="-1" aria-labelledby="americanModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="americanModalLabel">Book Your Room Now!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                            <label for="customer-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="customer-name" placeholder="John Doe" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="customer-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="customer-email" placeholder="john.doe@email.com" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="room-theme" class="form-label">Room Theme</label>
+                            <input type="text" class="form-control" id="american-room" placeholder="Americana" disabled>
+                          </div>
+                          <select class="form-select mb-2" aria-label="select-room">
+                            <option selected>No. Of Guests (max 3)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <select class="form-select" aria-label="select-guests">
+                            <option selected>No. Of Guests (max 3)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" onclick="">Book It!</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
             <div class="col">
-                <div class="card card-class">
-                    <img src="images/pexels-mikhail-nilov-8391465.jpg" alt="harry-potter">
+                <div class="card card-class" data-bs-toggle="modal" data-bs-target="#magic-modal">
+                    <img loading="lazy" src="images/pexels-mikhail-nilov-8391465.jpg" alt="harry-potter">
                     <h4 class="text-center">hogwarts</h4>
                 </div>
             </div>
+
+            <div class="modal fade" id="magic-modal" tabindex="-1" aria-labelledby="magicModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="magicModalLabel">Book Your Room Now!</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                            <label for="customer-name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="customer-name" placeholder="John Doe" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="customer-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="customer-email" placeholder="john.doe@email.com" required>
+                          </div>
+                          <div class="mb-3">
+                              <label for="room-theme" class="form-label">Room Theme</label>
+                              <input type="text" class="form-control" id="magic-room" placeholder="Hogwarts" disabled>
+                          </div>
+                          <select class="form-select mb-2" aria-label="select-room">
+                            <option selected>No. Of Guests (max 3)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <select class="form-select" aria-label="select-guests">
+                            <option selected>No. Of Guests (max 3)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" onclick="">Book It!</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
+
+    <!--============================================== Contact Page =================================================-->
+
+    <footer id="contact-page">
+        <img loading="lazy" src="images\pexels-lisa-fotios-1662145.jpg" alt="farm" width="1531px" height="786px">
+        <div class="container content-container">
+            <div class="contact-detail row">
+                <h3 class="text-decoration-underline">contact us</h3>
+                <p>
+                    schrute farms
+                    near NH21, abbotabad, New Santos
+                    d.schrute26@hotmail.com
+                    <span>(262)-656-7008</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
 </body>
 </html>
